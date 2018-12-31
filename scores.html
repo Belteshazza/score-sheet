@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCORES PROJECT</title>
+ 
+  <style type="text/css">
+    
+    body{
+      background-image: url('images/black5.jpg');
+      color:rgb(235, 140, 15);
+      background-size:cover;
+      
+    }
+
+  </style>
+</head>
+<body>
+
+<form>
+<h1 style="margin-left:260px; margin-top:70px; color:white;"> Javascript Score Sheet</h1>
+	<table  width="80%" style="margin-left:80px; margin-top:40px">
+
+		<tr style="font-size: 20px">
+
+			<td>SUBJECTS</td>
+			<td>SCORES</td>
+			<td>GRADES</td>
+
+		</tr>
+
+        <tr>
+        	
+        	<td>English</td>
+        	<td><input type="text" name="score" id="english" onkeyup="Scores(this.value,'eng');"></td>
+        	<td><input type="text" name="grade" id="eng"></td>
+
+        </tr>
+
+         <tr>
+         	
+          <td>Maths</td>
+          <td><input type="text" name="score" id="maths" onkeyup="Scores(this.value,'math');"></td>
+          <td><input type="text" name="grade" id="math"></td>
+
+         </tr>
+
+         <tr>
+         	
+            <td>Chemistry</td>
+            <td><input type="text" name="score" id="chemistry" onkeyup="Scores(this.value,'chem');"></td>
+            <td><input type="text" name="grade" id="chem"></td>
+
+         </tr>
+
+         <tr>
+         	
+            <td>Biology</td>
+            <td><input type="text" name="score" id="biology" onkeyup="Scores(this.value,'bio');"></td>
+            <td><input type="text" name="grade" id="bio"></td>
+
+         </tr>
+
+         <tr>
+         	
+            <td>French</td>
+            <td><input type="text" name="score" id="french" onkeyup="Scores(this.value,'fre');"></td>
+            <td><input type="text" name="grade" id="fre"></td>
+
+          </tr>
+
+           <tr>
+
+           	<td>
+           <input type="button" name="getresult" id="getresult" value="Get Result" onclick="Result(document.getElementById('total').innerHTML);">
+           </td>
+           <td></td>
+           <td></td>
+
+           </tr>
+
+           <tr>
+           	
+           <td style="font-size: 20px">TOTAL</td>
+           <td id="total"></td>
+           <td></td>
+
+           </tr>
+
+          <tr>
+          	
+            <td>Remarks</td>
+            <td id="remark"></td>
+            <td id="image"></td>
+            	
+          </tr>
+
+            <tr>
+            	
+              <td>Average</td>
+              <td id="avg"></td>
+              <td></td>
+
+            </tr>
+
+            <tr>
+            	
+             <td>Password</td>
+             <td><input type="password" name="password" id="pswd"></td>
+             <td><input type="checkbox" name="checkbox" id="myCheck" onclick="check()">Reveal Password</td>	
+
+
+            </tr>
+
+	</table>
+
+</form>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/scores.js"></script>
+</body>
+</html>
